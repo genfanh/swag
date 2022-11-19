@@ -4,13 +4,13 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/genfanh/swag/example/celler/controller"
+	_ "github.com/genfanh/swag/example/celler/docs"
+	"github.com/genfanh/swag/example/celler/httputil"
 	"github.com/gin-gonic/gin"
-	"github.com/swaggo/swag/example/celler/controller"
-	_ "github.com/swaggo/swag/example/celler/docs"
-	"github.com/swaggo/swag/example/celler/httputil"
 
-	swaggerFiles "github.com/swaggo/files"
-	ginSwagger "github.com/swaggo/gin-swagger"
+	swaggerFiles "github.com/genfanh/files"
+	ginSwagger "github.com/genfanh/gin-swagger"
 )
 
 //	@title			Swagger Example API

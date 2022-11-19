@@ -13,7 +13,7 @@ GOPATH:=$(shell $(GOCMD) env GOPATH)
 u := $(if $(update),-u)
 
 BINARY_NAME:=swag
-PACKAGES:=$(shell $(GOLIST) github.com/swaggo/swag github.com/swaggo/swag/cmd/swag github.com/swaggo/swag/gen github.com/swaggo/swag/format)
+PACKAGES:=$(shell $(GOLIST) github.com/genfanh/swag github.com/genfanh/swag/cmd/swag github.com/genfanh/swag/gen github.com/genfanh/swag/format)
 GOFILES:=$(shell find . -name "*.go" -type f)
 
 export GO111MODULE := on
@@ -54,7 +54,7 @@ clean:
 
 .PHONY: deps
 deps:
-	$(GOGET) github.com/swaggo/cli
+	$(GOGET) github.com/genfanh/cli
 	$(GOGET) github.com/ghodss/yaml
 	$(GOGET) github.com/KyleBanks/depth
 	$(GOGET) github.com/go-openapi/jsonreference

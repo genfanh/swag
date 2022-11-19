@@ -829,6 +829,7 @@ func processRouterOperation(parser *Parser, operation *Operation) error {
 			}
 
 			parser.debug.Printf("warning: %s\n", err)
+			continue
 		}
 
 		*op = &operation.Operation

@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/swaggo/swag/testdata/generics_property/types"
-	"github.com/swaggo/swag/testdata/generics_property/web"
+	"github.com/genfanh/swag/testdata/generics_property/types"
+	"github.com/genfanh/swag/testdata/generics_property/web"
 	"net/http"
 )
 

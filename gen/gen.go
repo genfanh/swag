@@ -15,9 +15,9 @@ import (
 	"text/template"
 	"time"
 
+	"github.com/genfanh/swag"
 	"github.com/ghodss/yaml"
 	"github.com/go-openapi/spec"
-	"github.com/swaggo/swag"
 )
 
 var open = os.Open
